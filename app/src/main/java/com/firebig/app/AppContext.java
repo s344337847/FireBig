@@ -96,6 +96,7 @@ public class AppContext extends Application {
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
+        请替换AndroidMainfest中的Bmob_APP_KEY
         String Bmob_APP_KEY = appInfo.metaData.getString("Bmob_APP_KEY");
         // init Bmob Data server
         //Bmob.initialize(getApplicationContext(), "8ffccc4cd857a483d904c9d9ee4a2b87");
