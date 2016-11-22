@@ -145,10 +145,10 @@
 
         <meta-data
             android:name="Bmob_APP_KEY"
-            android:value="8ffccc4cd857a483d904c9d9ee4a2b87" />
+            android:value="You Bmob_APP_KEY" />
         <meta-data
             android:name="BUG_HD_SDK_GENERAL_KEY"
-            android:value="42b8ddb055d574db3632a8fcce26b3f6" />
+            android:value="You BUG_HD_SDK_GENERAL_KEY" />
 
     </application>
 
