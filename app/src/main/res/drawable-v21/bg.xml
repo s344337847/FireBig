@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#e5e5e5"><!-- 点击之后的波纹颜色 -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <!--不点击显示的背景-->
+    <item android:drawable="@color/bg" />
+</ripple>

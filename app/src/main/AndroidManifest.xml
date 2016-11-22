@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.firebig.activity">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--摄像头-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--通知震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--推送所需的权限-->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- iBeancon功能所需权限 -->;
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 如果使用积分墙广告,还需要配置下面权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name="com.firebig.app.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/header"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.firebig.activity.Activity_Wellcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.firebig.activity.Activity_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.firebig.activity.Activity_Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.firebig.activity.Activity_Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.firebig.activity.Activity_MyNews"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_recommend"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_Setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_About"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_Web"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_Suggest"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_UploadNews"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_Message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other" />
+        <activity
+            android:name="com.firebig.activity.Activity_MyData"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name="com.firebig.activity.Activity_ShowNewsItem"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar_Other"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- 网络监听广播-->
+        <receiver android:name="com.firebig.app.NetWorkListener">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!--geitui -->
+        <receive
+            android:name="com.firebig.app.GetuiBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.${GETUI_APP_ID}" />
+            </intent-filter>
+        </receive>
+
+        <!-- 有米广告-->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false" >
+        </service>
+        <receiver
+            android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="Bmob_APP_KEY"
+            android:value="8ffccc4cd857a483d904c9d9ee4a2b87" />
+        <meta-data
+            android:name="BUG_HD_SDK_GENERAL_KEY"
+            android:value="42b8ddb055d574db3632a8fcce26b3f6" />
+
+    </application>
+
+
+</manifest>

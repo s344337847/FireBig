@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/home_toolbar_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_radio_black_24dp_w" />
+
+        <ImageView
+            android:id="@+id/home_toolbar_ser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/home_toolbar_add"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="30dp"
+            android:layout_toStartOf="@+id/home_toolbar_add"
+            android:background="@drawable/ic_search_black_24dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/home_toolbar_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/home_toolbar_ser"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="32dp"
+            android:layout_toStartOf="@+id/home_toolbar_ser"
+            android:background="@drawable/ic_notifications_black_24dp" />
+
+        <TextView
+            android:id="@+id/home_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/home_no_connect"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/home_toolbar_message_red"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_alignStart="@+id/home_toolbar_message"
+            android:layout_alignTop="@+id/home_toolbar_message"
+            android:background="@drawable/message_red" />
+    </RelativeLayout>
+</LinearLayout>

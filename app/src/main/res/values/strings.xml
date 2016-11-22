@@ -1,0 +1,205 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="app_name">FireBig</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_register">注册</string>
+    <string name="login_hint_txt">账号</string>
+    <string name="password_hint_txt">密码</string>
+    <string name="password_confirm">确认密码</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="account_ts">账号(用于登陆，账号不得出现特殊字符)</string>
+    <string name="firebigagreement"><u>FireBig协议</u></string>
+    <string name="search">搜索</string>
+    <string name="add_news">发送广播</string>
+    <string name="home_news">广播</string>
+    <string name="nva_mynews"><font size="15">我的广播</font></string>
+    <string name="nva_like"><font size="15">推荐</font></string>
+    <string name="nva_setting"><font size="15">设置</font></string>
+    <string name="nva_about"><font size="15">关于</font></string>
+    <string name="nva_help"><font size="15">帮助</font></string>
+    <string name="app_exit">退出登录</string>
+    <string name="suggest_text">您也可以加我的QQ：344337847 进行反馈</string>
+
+
+    <string name="login_toast01">帐号密码不能为空！</string>
+    <string name="login_toast02">登录失败，请您检查用户或密码！</string>
+    <string name="register_toast01">两次密码不一致!</string>
+    <string name="register_toast02">帐号或密码不能为空！</string>
+    <string name="register_toast03">帐号不能出现特殊字符！</string>
+    <string name="register_toast04">账号必须为字母或数字！</string>
+
+    <string name="home_mydata_show01">未登录！点击可以登录</string>
+    <string name="logining">正在登录..</string>
+    <string name="home_mydata_show02">点击可以登录</string>
+
+    <string name="output_error01">无网络连接！</string>
+    <string name="output_error02">网络连接超时！</string>
+    <string name="output_error03">抱歉呢！该用户名被注册了</string>
+
+    <string name="home_no_login">（未登录）广播</string>
+    <string name="home_no_connect">（未连接）广播</string>
+    <string name="home_unable">没有登录呢！请您先登录！</string>
+
+    <string name="check_update">已经是最新版本！</string>
+
+    <string name="suggest_input_hint2">联系方式（为了方便联系到您，请务必留下联系方式）</string>
+    <string name="suggest_input_title1">意见或建议</string>
+    <string name="suggest_input_title2">联系方式</string>
+    <string name="suggest_btn">提交</string>
+    <string name="suggest_title">意见反馈</string>
+    <string name="suggest_thank">非常感谢您的反馈！</string>
+    <string name="suggest_wring">意见不能为空哦！</string>
+    <string name="suggest_upload_loading">正在提交...</string>
+
+
+    <string name="uploadnews_title">发送广播</string>
+    <string name="uploadnews_hint">想说点啥？</string>
+    <string name="uploadnews_btn">广播</string>
+    <string name="uploadnews_text01">添加图片（为您的广播添加一张图片）</string>
+    <string name="uploadnews_font01">四字简评</string>
+    <string name="uploadnews_font02">开启后他人可以用四个字评论您的广播并在广播视图上显示评论内容。</string>
+    <string name="uploadnews_text02">提示:\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        广播只保留三天，三天过后将过期不被查看到！</string>
+
+    <string name="uploadnews_choose01">拍照</string>
+    <string name="uploadnews_choose02">图库</string>
+    <string name="uploadnews_choose03">取消</string>
+
+
+    <string name="userdata_header">头像</string>
+    <string name="userdata_username">昵称</string>
+    <string name="userdata_account">账号</string>
+    <string name="userdata_singtrue">签名</string>
+    <string name="userdata_sofa">安全</string>
+    <string name="userdata_updatepass">修改密码</string>
+    <string name="userdata_title">我的资料</string>
+    <string name="userdata_update">修改</string>
+
+    <string name="upload_ts01">广播字数不能超过150个呢！</string>
+
+    <string-array name="about_list">
+        <item>检测更新</item>
+        <item>软件分享</item>
+        <item>意见反馈</item>
+        <item>开源许可</item>
+        <item>FireBig协议</item>
+        <item>帮助</item>
+        <item>关于我们</item>
+    </string-array>
+
+    <string-array name="setting_list">
+        <item>通知</item>
+        <item>声音提示</item>
+        <item>震动提示</item>
+        <item>其他</item>
+        <item>四字短评显示</item>
+        <item>关闭广播长按特效</item>
+        <item>清除缓存</item>
+    </string-array>
+
+    <string name="setting_title01">通知</string>
+    <string name="setting_sound">声音提示</string>
+    <string name="setting_ver">震动提示</string>
+    <string name="setting_title2">其他</string>
+    <string name="setting_show_fw">四字短评显示</string>
+    <string name="setting_colose_pa">显示广播长按特效</string>
+    <string name="setting_clearcache">清除缓存</string>
+
+    <string name="setting_dec01">是否在广播上显示四字短评</string>
+    <string name="setting_dec02">关闭广播长按特效也许会流畅些，嗯...也许..</string>
+    <string name="setting_dec03">包括图片缓存</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="userdata_pop01">更换头像</string>
+    <string name="userdata_pop02">相册选择</string>
+    <string name="userdata_pop03">拍照</string>
+    <string name="userdata_pop05">保存到手机</string>
+    <string name="userdata_pop04">取消</string>
+
+    <string name="newsItem">广播详细</string>
+    <string name="newsitem_01">评论</string>
+    <string name="newsitem_02">四字评论</string>
+
+    <string name="crop__saving">正在上传数据…</string>
+    <string name="crop__wait">请稍后…</string>
+    <string name="crop__pick_error">图片路径出错!e</string>
+
+    <string name="crop__done">完成</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">取消</string>
+
+    <!-- 消息页面 -->
+    <string name="message">消息</string>
+    <string name="no_message">没有新消息T_T</string>
+
+    <!-- 我的广播页面 -->
+    <string name="no_net">好像没有网络呢！</string>
+    <string name="no_news">好像您还没有发布广播呢!</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="title_activity_activity__header">Activity_Header</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

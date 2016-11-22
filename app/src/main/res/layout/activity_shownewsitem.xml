@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newsitem_f_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:descendantFocusability="afterDescendants"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:context="com.firebig.activity.Activity_ShowNewsItem">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.firebig.widget.FBScrollView
+            android:id="@+id/news_item_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/news_list_itemc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/news_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/line_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/newsitem_comment"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="@string/newsitem_01"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="19sp" />
+
+                                    <ProgressBar
+                                        android:id="@+id/newsitem_load_bar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="3" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/move_line"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:background="@color/colorPrimary" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/line_color" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/newsitem_four_word_comment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:text="@string/newsitem_02"
+                                    android:textSize="18sp" />
+
+                                <View
+                                    android:id="@+id/move_line_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:background="@color/colorPrimary" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/line_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/newsitem_no_news_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/ic_mood_bad_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/newsitem_no_news_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="还没有人发布评论呢！"
+                            android:textColor="@color/line_color"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <com.firebig.widget.FBListView
+                        android:id="@+id/newsitem_comment_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout" />
+
+                    <com.firebig.widget.FBListView
+                        android:id="@+id/newsitem_four_comment_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </com.firebig.widget.FBScrollView>
+
+        <LinearLayout
+            android:id="@+id/news_item_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newsitem_comment_hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/newsitem_01"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+
+                <View
+                    android:id="@+id/move_line_00"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color" />
+
+                <View
+                    android:id="@+id/move_line_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newsitem_four_word_comment_hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/newsitem_02"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/move_line_001"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color" />
+
+                <View
+                    android:id="@+id/move_line_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="22dp"
+            android:gravity="right|bottom"
+            android:src="@drawable/ic_fbtn_add"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/comment_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/comment_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="12"
+                    android:background="@drawable/ic_send_black_24dp"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

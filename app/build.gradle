@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25'
+    //useLibrary 'org.apache.http.legacy'
+
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+
+    defaultConfig {
+        applicationId "com.firebig.activity"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "89rnV95S0r61fUvGPNruB4",
+                GETUI_APP_KEY   : "rcQwvbKR1H9wPOpUp2dJT6",
+                GETUI_APP_SECRET: "9l1Jpw6g9R9zOEIcI9q5D5",
+                PACKAGE_NAME    : applicationId
+        ]
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //以下SDK开发者请根据需要自行选择
+    //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
+    //3.5.0：请务必查看下面注释[1]
+    compile 'cn.bmob.android:bmob-sdk:3.5.0'
+    //bmob-im：Bmob的即时通讯包，注意每个版本的im依赖特定版本的bmob-sdk，具体的依赖关系可查看下面注释[1]
+    //compile 'cn.bmob.android:bmob-im:2.0.5@aar'
+    // BugHD
+    compile 'im.fir:fir-sdk:latest.integration@aar'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    // JPush revicer
+    compile 'com.getui:sdk:2.9.0.0'
+    // other
+    compile 'com.soundcloud.android:android-crop:0.9.10@aar'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.anthonycr.grant:permissions:1.0'
+    compile files('libs/YoumiSdk_v6.4.4_2016-09-08.jar')
+}

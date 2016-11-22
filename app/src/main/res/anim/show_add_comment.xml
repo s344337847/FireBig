@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:duration="300"
+        android:fromXDelta="200%"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:startOffset="100"
+        android:toXDelta="0" />
+</set>
+
+    <!-- 延时启动 android:startOffset="1000"
+
+
+     -->

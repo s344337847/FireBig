@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#80adff</color> <!--雷姆蓝:#80adff -->
+    <color name="colorPrimaryDark">#6080b6</color><!-- #6080b6-->
+    <color name="colorAccent">#FF4081</color>
+    <color name="navigationBarColor">@android:color/transparent</color>
+    <color name="login_btn_color">#80adff</color>
+    <color name="register_btn_color">#f4f4f4</color>
+    <color name="btn_down">#f4f4f4</color>
+    <color name="line_color">#cac9c9</color>
+    <color name="bg">#eeeeee</color>
+    <color name="text_color">#1e1e1e</color>
+
+    <!-- SwipeRefreshLayout Color-->
+    <color name="color01">#FF4081</color>
+    <color name="color02">#efd911</color>
+    <color name="color03">#02a1f7</color>
+    <color name="color04">#15ff00</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="message_red">#FFFF0000</color>
+
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+</resources>

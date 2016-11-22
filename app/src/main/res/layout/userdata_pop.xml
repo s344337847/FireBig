@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userdata_pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userdata_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userdata_pop_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:text="@string/userdata_pop01"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/line_color"></View>
+
+        <TextView
+            android:id="@+id/userdata_pop_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:text="@string/userdata_pop02"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"></View>
+
+        <TextView
+            android:id="@+id/userdata_pop_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:text="@string/userdata_pop03"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/line_color"></View>
+
+        <TextView
+            android:id="@+id/userdata_pop_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:text="@string/userdata_pop04"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"></View>
+
+    </LinearLayout>
+
+
+</LinearLayout>

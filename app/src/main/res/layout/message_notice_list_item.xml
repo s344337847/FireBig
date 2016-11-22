@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:context="com.firebig.activity.Activity_Message">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/notice_message_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="FireBig回复了您:"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/notice_message_reply_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="4"
+            android:text="回复"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/notice_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/crop__selector_pressed"
+        android:singleLine="false"
+        android:text="6666666"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/notice_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:singleLine="false"
+        android:text="刚刚"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color" />
+
+</LinearLayout>
