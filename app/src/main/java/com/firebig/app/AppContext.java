@@ -116,7 +116,7 @@ public class AppContext extends Application {
         // BmobPush.startWork(getApplicationContext());
         //使用个推
         PushManager.getInstance().initialize(this.getApplicationContext());
-        AdManager.getInstance(this).init("1318ef6ca171f8a6", "730ff37b5592dbd8", false, false);
+        AdManager.getInstance(this).init(个推appId, 个推appSecret, false, false);
         // BugHD
         //FIR.init(this.getApplicationContext());
         super.onCreate();
